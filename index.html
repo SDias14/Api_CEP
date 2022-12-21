@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Busca CEP</title>
+</head>
+
+<body>
+
+    <div class="formulario" data-form="form">
+        <form action="" id="buscaCep">
+            <label for="cep">Digite um CEP</label>
+            <br>
+            <input type="text" name="cep" id="cep" class="borderRed">
+            <input type="button" value="Buscar" id="btnCep">
+        </form>
+    </div>
+    
+    <div class="resultadosDados">
+        
+        <!-- rua , vai retornar a rua da api -->
+        <div class="resultadoCep box-info">
+            <h1>Rua</h1>
+            <div id="rua" class="info"></div>
+        </div>
+        <!-- fim  -->
+
+        
+        <!-- bairro , vai retornar o bairro da api -->
+        <div class="resultadoCep box-info">
+            <h1>Bairro</h1>
+            <div id="bairro" class="info"></div>
+        </div>
+        <!-- fim  -->
+
+        
+        <!--complemento , vai retornar o complemento da api -->
+        <div class="resultadoCep box-info">
+            <h1>Complemento</h1>
+            <div id="complemento" class="info"></div>
+        </div>
+        <!-- fim  -->
+
+        <!--gia, vai retornar gia da api -->
+        <div class="resultadoCep box-info">
+            <h1>Gia</h1>
+            <div id="gia" class="info"></div>
+        </div>
+        <!-- fim  -->
+        
+        <!--ibge , vai retornar ibge da api -->
+        <div class="resultadoCep box-info">
+            <h1>IGBE</h1>
+            <div id="ibge" class="info"></div>
+        </div>
+
+        <!-- fim  -->
+
+        <!--localidade , vai retornar localidade da api -->
+        <div class="resultadoCep box-info">
+            <h1>Localidade</h1>
+            <div id="localidade" class="info"></div>
+        </div>
+        <!-- fim  -->
+
+        <!--uf , vai retornar uf da api -->
+        <div class="resultadoCep box-info">
+            <h1>UF</h1>
+            <div id="uf" class="info"></div>
+        </div>
+        <!-- fim  -->
+
+    </div>
+
+ 
+   
+    <script src="src/index.js"></script>
+</body>
+
+</html>
